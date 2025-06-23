@@ -8,8 +8,8 @@ Included Files:
 * /CNN.ipynb 				→ Convolutional Neural Network implementation used to classify patient data patterns and augment structured features.
 * /data\_preprocessing.ipynb 		→ Complete data cleaning and preprocessing pipeline, including missing value handling, z-score normalization, one-hot encoding, and preparation of severity indices (OASIS, SIRS, qSOFA, APS III, mLODS).
 * /LLM.ipynb 				→ Large Language Model integration pipeline, embedding discharge summaries using ClinicalBERT, retrieving top-k similar cases with FAISS, and generating contextual prompts processed through Mistral-7B using local Ollama deployment.
-* /ML\_modelling\_withICU.ipynb 	→ Machine learning models (Logistic Regression, XGBoost, LightGBM, SVM) trained on structured data including ICU-specific variables.
-* /ML\_modelling\_withoutICU.ipynb 	→ Machine learning models excluding ICU-specific variables for comparative performance analysis.
+* /ML_modelling_withICU.ipynb 	→ Machine learning models (Logistic Regression, XGBoost, LightGBM, SVM) trained on structured data including ICU-specific variables.
+* /ML_modelling_withoutICU.ipynb 	→ Machine learning models excluding ICU-specific variables for comparative performance analysis.
 
 Implementation Instructions:
 
@@ -23,13 +23,13 @@ Implementation Instructions:
 
 3. Prepare Data:
 
-   * Obtain MIMIC-III dataset with appropriate access.
-   * Run data\_preprocessing.ipynb to clean and format both structured and unstructured data.
+   * Obtain the MIMIC-III dataset with appropriate access.
+   * Run data_preprocessing.ipynb to clean and format both structured and unstructured data.
 
 4. Run Embedding & Retrieval:
 
    * Use LLM.ipynb to generate ClinicalBERT embeddings and build FAISS indices.
-   * Integrate RAG framework to retrieve similar patient narratives and fuse them with structured risk scores.
+   * Integrate the RAG framework to retrieve similar patient narratives and fuse them with structured risk scores.
 
 5. Train Models:
 
@@ -39,12 +39,12 @@ Implementation Instructions:
 
 6. Deep Learning Layer:
 
-   * Explore CNN.ipynb for convolutional model setup focused on sequential/temporal patterns.
+   * Explore CNN.ipynb for the convolutional model setup focused on sequential/temporal patterns.
 
 7. Deployment:
 
    * Deploy interactive Streamlit app for real-time predictions, SHAP explainability plots, and natural language outputs.
-   * For privacy-preserving LLM inference, use Ollama for local deployment of Mistral-7B.
+   * For privacy-preserving LLM inference, use Ollama for local deployment of Mistral-7 B.
 
 Evaluation Highlights:
 
@@ -61,21 +61,3 @@ Future Directions:
 * Prepare publication materials for submission to conferences or journals.
 
 Poster & User Interface Demo - https://drive.google.com/drive/u/0/mobile/folders/1IJyPbQsFxuHHa-ah0a6V9nllzCFD70YE?usp=drive_link
-
-Personal Email
-
-Haswanth Valluru		- 	haswanth0007@gmail.com
-Venkata Vidhya Sagar Keerthi 	- 	master.sagar248@gmail.com
-Parul Rathore 			- 	parulrathore2110@gmail.com
-Sruthi Srikanth			- 	sruthii.srikanth@gmail.com
-Vatsal Bhalani 			- 	vat03bhalani@gmail.com
-Maneesh Choppara 		- 	maneesh_choppara@outlook.com
-
-LinkedIn Profiles
-
-Haswanth Valluru		- 	https://www.linkedin.com/in/haswanth-valluru/
-Venkata Vidhya Sagar Keerthi 	- 	https://www.linkedin.com/in/venkata-vidhya-sagar/
-Parul Rathore 			- 	https://www.linkedin.com/in/parulrathore/
-Sruthi Srikanth			- 	https://www.linkedin.com/in/srikanth-sruthi/
-Vatsal Bhalani 			- 	https://www.linkedin.com/in/vatsal-bhalani/
-Maneesh Choppara 		- 	http://linkedin.com/in/maneesh-choppara-3833b2183/
